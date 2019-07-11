@@ -1,0 +1,253 @@
+@import url('global.styl');
+
+  $vw_fontsize=108; // iPhone 6尺寸的根元素大小基准值
+   rem($px)
+      ($px / $vw_fontsize ) * 1rem;
+
+  $vw_design=1920;
+html {
+  font-size: ($vw_fontsize / ($vw_design / 2)) * 100vw;
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: 1200px) {
+    font-size: 108px;
+  }
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+header
+  width: 100%
+  height: rem(64)
+  background: #1B1B1B
+  overflow hidden
+  .headerW
+    max-width: rem(1200);
+    position: relative;
+    margin: auto;
+    will-change: transform;
+    opacity 1
+    z-index 1
+    top: 0
+    height: rem(64)
+    nav
+      height: rem(64)
+      width 100%
+      padding: 0 rem(24);
+      margin auto
+      display flex
+      justify-content space-between
+      align-items center
+      box-sizing border-box
+      color white
+      box-shadow: 0 5px 8px rgba(0,0,0,0.15);
+      .logo
+        display: inline-block;
+        position: relative;
+        width rem(203)
+        height rem(46)
+        line-height: rem(64);
+        background transparent
+        img[alt="logo"]
+          vertical-align: middle;
+          display: inline-block;
+          width rem(20)
+          height rem(20)
+      ul
+        line-height: rem(62);
+        background: transparent;
+        color: #fff;
+        height: rem(64);
+        border-bottom-color: transparent;
+        position: relative;
+        width rem(800)
+        display: flex
+        >*{
+          flex 1
+        }
+        .active
+          border-bottom 2px solid #E83F27
+          a
+            color #E83F27
+            border none
+            outline none
+            font-size rem(16)
+            line-height rem(64)
+        li
+          text-align: center
+          border-bottom 2px solid transparent
+          list-style none
+          cursor pointer
+          line-height rem(64)
+          transition: border-color .3s cubic-bezier(.645, .045, .355, 1),background .3s cubic-bezier(.645, .045, .355, 1),padding .15s cubic-bezier(.645, .045, .355, 1);
+          &:hover
+            border-bottom 2px solid #E83F27
+          &:hover a
+            color #E83F27
+          a
+            text-decoration: none
+            color #fff
+            transition: color .3s;
+            font-size rem(16)
+            line-height rem(64)
+.banner
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  border-color: #666;
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  .bannerC
+    display inline-block
+    position absolute
+    top 20%
+    margin auto
+    left: 0
+    right: 0
+    font-size: rem(14)
+    color: #fff
+    width: rem(550)
+    img[alt="bannerLogo"]
+      width: rem(350);
+      min-height: rem(60);
+      margin: auto;
+      display: inline-block;
+      font-size: rem(40);
+      position: relative;
+    .sign
+      word-wrap: break-word;
+      min-height: rem(24);
+      margin-bottom: rem(30)
+      h1
+        font-size:rem(28);
+        font-family:MicrosoftYaHei-Bold;
+        font-weight:bold;
+        color:rgba(254,254,254,1);
+        line-height:rem(38);
+      p
+        font-size:rem(16);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(254,254,254,1);
+        line-height:rem(38);
+    .learnMore
+      font-size rem(24)
+      color #fff
+      width:rem(188);
+      height:62px;
+      border:2px solid rgba(255,255,255,1);
+      border-radius:10px;
+      margin auto
+      text-align: center
+      transition background .45s cubic-bezier(.215, .61, .355, 1),box-shadow .45s cubic-bezier(.215, .61, .355, 1),-webkit-box-shadow .45s cubic-bezier(.215, .61, .355, 1)
+      cursor pointer
+      &:hover
+        box-shadow: 0 0 10px rgba(50,250,255,0.75);
+      span
+        font-size:rem(16);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(254,254,254,1);
+        line-height:rem(62);
+  .arrow
+    position absolute
+    bottom: rem(20)
+    left: 0
+    right: 0
+    margin auto
+    transform translate(0px,-20px)
+    img[alt="sign"]
+      width: rem(38)
+      height: rem(22)
+.content0
+  width: 100%
+  height: rem(1057)
+  padding rem(81) 0 0 0
+  box-sizing border-box
+  h1
+    width:rem(199);
+    height:rem(38);
+    font-size:rem(38);
+    font-family:MicrosoftYaHei-Bold;
+    font-weight:bold;
+    color:rgba(75,70,70,1);
+    line-height:rem(38);
+    margin 0 auto rem(60)
+  ul
+    display: flex
+    justify-content: space-between
+    margin:0 auto rem(116)
+    width: 61.6%
+    li
+      list-style none
+      text-align: center
+      img
+        width: rem(120)
+        height: rem(120)
+        margin-bottom: rem(28)
+      h6
+        width:rem(127);
+        height:rem(20);
+        font-size:rem(20);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(75,70,70,1);
+        line-height:rem(38);
+        margin auto
+        margin-bottom: rem(22)
+      span
+        width:rem(268);
+        height:rem(38);
+        font-size:rem(14);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(102,102,102,1);
+        line-height:rem(24);
+        display block
+  .more
+    height: rem(446)
+    width: 53.2%
+    margin: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .texts
+      h3
+        font-size:rem(28);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(75,70,70,1);
+        line-height:rem(38);
+        margin-bottom: rem(25)
+      p
+        font-size:rem(16);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(101,101,101,1);
+        line-height:rem(28);
+        margin-bottom: rem(29)
+        width: rem(366)
+      .button
+        width:rem(118);
+        height:rem(40);
+        background:rgba(232,63,39,1);
+        box-shadow:0px 2px 10px 0px rgba(232,63,39,0.14);
+        border-radius:6px;
+        text-align: center
+        span
+          background:rgba(232,63,39,1);
+          box-shadow:0px 2px 10px 0px rgba(232,63,39,0.14);
+          border-radius:6px;
+          color white
+          line-height: rem(40)
+    .product
+      width: rem(519)
+      height: rem(446)
+
+
+
+

@@ -1,0 +1,43 @@
+extends templates/layout
+block header
+    -const active=1
+    include ./templates/header.pug
+block content
+    .banner
+        .bannerC
+            .logo
+                img(src="./images/logo01.png" alt="bannerLogo")
+            .sign
+                h1 京猪充电让您的移动端设备永不断电
+                p Jingzhu charging keeps your mobile terminal never power off.
+            .learnMore
+                span Learn More
+        .arrow
+            img(src="./images/sign.png" alt="sign")
+    section.content0
+        h1 产品与服务
+        ul
+            li
+                .imgW
+                    img(src="./images/index_icon01.png")
+                h6 优质服务
+                span 京猪充电为超过上百万的用户提供过移动电源租借服务
+            li
+                img(src="./images/index_icon02.png")
+                h6 全范围覆盖
+                span 全国6大一线城市合作商家上万家，4G无线快速卡槽租借
+            li
+                img(src="./images/index_icon03.png")
+                h6 打造最优平台
+                span 提供客服、运维、数据等全方位服务，京猪充电让您的移动端设备永不断电
+        .more
+            .texts
+                h3 京猪共享充电宝
+                p  便捷扫码快速充电，大容量可携带，异地随时归还可享受支付宝、微信免押快速租借。
+                .button
+                    span 了解更多 >
+            .product
+                img(src="./images/img_product.png")
+
+block footer
+    include templates/footer.pug
