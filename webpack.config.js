@@ -13,6 +13,7 @@ module.exports = {
   // 入口文件
   entry: {
     index: "./src/javascript/index.js",
+    join:"./src/javascript/join.js"
   },
   // 打包出口
   output: {
@@ -145,6 +146,11 @@ module.exports = {
       // 该html文件需要引入的js文件，对应的是上方入口的键名
       chunks: ["index"],
     }),
+    new HtmlWebPackPlugin({
+      template: './src/join.pug',
+      filename: './join.html',
+      chunks: ["join"],
+    })
   ],
   // devServer 配置
   devServer: {
