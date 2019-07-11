@@ -1,0 +1,24 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box
+}
+  li{
+    list-style:none
+  }
+
+ $vw_fontsize=108; // iPhone 6尺寸的根元素大小基准值
+ rem($px)
+    ($px / $vw_fontsize) * 1rem;
+
+$vw_design=1920;
+html {
+  font-size: ($vw_fontsize / ($vw_design / 2)) * 100vw;
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: 1200px) {
+    font-size: 108px;
+  }
+}
+
+

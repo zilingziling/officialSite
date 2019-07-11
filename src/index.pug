@@ -5,8 +5,7 @@ block header
 block content
     .banner
         .bannerC
-            .logo
-                img(src="./images/logo01.png" alt="bannerLogo")
+            img(src="./images/logo01.png" alt="bannerLogo")
             .sign
                 h1 京猪充电让您的移动端设备永不断电
                 p Jingzhu charging keeps your mobile terminal never power off.
@@ -38,6 +37,86 @@ block content
                     span 了解更多 >
             .product
                 img(src="./images/img_product.png")
+    section.content1
+        h1 应用场景
+        p 京猪产品已签约红旗连锁超市，进入肯德基等多商业圈
+        ul
+            li
+                img(src="./images/img_001.png" alt="scene")
+                span 超市/supermarket
+            li
+                img(src="./images/img_002.png" alt="scene")
+                span 商城/Shopping Mall
+            li
+                img(src="./images/img_003.png" alt="scene")
+                span 车站/Station
+            li
+                img(src="./images/img_004.png" alt="scene")
+                span 酒吧/Bar
+            li
+                img(src="./images/img_005.png" alt="scene")
+                span 地铁站/Metro Station
+            li
+                img(src="./images/img_006.png" alt="scene")
+                span 游乐园/Amusement Park
+            li
+                img(src="./images/img_007.png" alt="scene")
+                span 酒店/Hotel
+            li
+                img(src="./images/img_008.png" alt="scene")
+                span 美容/SPA
+    section.content2
+        h1 总部全程运营支持 让你简单创业
+        p 总部支持力度大 创业简单有奔头
+        ul
+            li
+                img(src="./images/icon01.png" alt="support")
+                .desc
+                    h6 培训支持
+                    p 公司提供有效的前期和定期培训，如本行业谈判商家的技巧等。
+            li
+                img(src="./images/icon02.png" alt="support")
+                .desc
+                    h6 维护支持
+                    p 京猪后台业务运营维护，日常技术运营支持，定期对平台进行技术升级。
+            li
+                img(src="./images/icon03.png" alt="support")
+                .desc
+                    h6 运营支持
+                    p 京猪运营一对一进行技术支持，根据当地市场情况，指导合作开拓业务。
+            li
+                img(src="./images/icon04.png" alt="support")
+                .desc
+                    h6 设备保修
+                    p 一年内设备非故意损坏，公司全程保修。
+            li
+                img(src="./images/icon05.png" alt="support")
+                .desc
+                    h6 市场支持
+                    p 新加入合作商，进行实地市场调查区域选址评估，商家谈判支持。
+            li
+                img(src="./images/icon06.png" alt="support")
+                .desc
+                    h6 奖励支持
+                    p 公司对优秀合作商进行各类奖励和支持。
+    section.content3
+        h1 京猪期待您的加入
+        p 若您有合作意向及建议，烦请填写如下信息，我们的客服会及时联系您，感谢您对京猪充电的关注！（填写过程中如有疑问，欢迎致电问询）
+        ul
+            li.map
+
+            li
+                div.form
+                    p 您的称呼
+                        span *
+                    input(placeholder="点击输入您的称呼")
+                    p 联系电话
+                        span *
+                    input(placeholder="点击输入您的联系电话")
+                    p 内容
+                        span *
+                    textarea(placeholder="说明您是业务咨询问题还是售后问题，方便客服人员更快的处理您的问题，感谢您的支持~")
+                    button(type="button") 提交
 
 block footer
     include templates/footer.pug

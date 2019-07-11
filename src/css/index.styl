@@ -1,10 +1,11 @@
-@import url('global.styl');
+@import './global.styl';
+@import './header.styl';
+@import "footer.styl"
+ $vw_fontsize=108; // iPhone 6尺寸的根元素大小基准值
+ rem($px)
+    ($px / $vw_fontsize) * 1rem;
 
-  $vw_fontsize=108; // iPhone 6尺寸的根元素大小基准值
-   rem($px)
-      ($px / $vw_fontsize ) * 1rem;
-
-  $vw_design=1920;
+$vw_design=1920;
 html {
   font-size: ($vw_fontsize / ($vw_design / 2)) * 100vw;
   padding: 0;
@@ -17,80 +18,6 @@ body{
   padding: 0;
   margin: 0;
 }
-header
-  width: 100%
-  height: rem(64)
-  background: #1B1B1B
-  overflow hidden
-  .headerW
-    max-width: rem(1200);
-    position: relative;
-    margin: auto;
-    will-change: transform;
-    opacity 1
-    z-index 1
-    top: 0
-    height: rem(64)
-    nav
-      height: rem(64)
-      width 100%
-      padding: 0 rem(24);
-      margin auto
-      display flex
-      justify-content space-between
-      align-items center
-      box-sizing border-box
-      color white
-      box-shadow: 0 5px 8px rgba(0,0,0,0.15);
-      .logo
-        display: inline-block;
-        position: relative;
-        width rem(203)
-        height rem(46)
-        line-height: rem(64);
-        background transparent
-        img[alt="logo"]
-          vertical-align: middle;
-          display: inline-block;
-          width rem(20)
-          height rem(20)
-      ul
-        line-height: rem(62);
-        background: transparent;
-        color: #fff;
-        height: rem(64);
-        border-bottom-color: transparent;
-        position: relative;
-        width rem(800)
-        display: flex
-        >*{
-          flex 1
-        }
-        .active
-          border-bottom 2px solid #E83F27
-          a
-            color #E83F27
-            border none
-            outline none
-            font-size rem(16)
-            line-height rem(64)
-        li
-          text-align: center
-          border-bottom 2px solid transparent
-          list-style none
-          cursor pointer
-          line-height rem(64)
-          transition: border-color .3s cubic-bezier(.645, .045, .355, 1),background .3s cubic-bezier(.645, .045, .355, 1),padding .15s cubic-bezier(.645, .045, .355, 1);
-          &:hover
-            border-bottom 2px solid #E83F27
-          &:hover a
-            color #E83F27
-          a
-            text-decoration: none
-            color #fff
-            transition: color .3s;
-            font-size rem(16)
-            line-height rem(64)
 .banner
   width: 100%;
   height: 100vh;
@@ -163,20 +90,22 @@ header
     img[alt="sign"]
       width: rem(38)
       height: rem(22)
+section
+  text-align: center
+  h1
+      font-size:rem(38);
+      font-family:MicrosoftYaHei-Bold;
+      font-weight:bold;
+      color:rgba(75,70,70,1);
+      line-height:rem(38);
+      margin 0 auto
 .content0
   width: 100%
   height: rem(1057)
   padding rem(81) 0 0 0
   box-sizing border-box
   h1
-    width:rem(199);
-    height:rem(38);
-    font-size:rem(38);
-    font-family:MicrosoftYaHei-Bold;
-    font-weight:bold;
-    color:rgba(75,70,70,1);
-    line-height:rem(38);
-    margin 0 auto rem(60)
+   margin-bottom rem(60)
   ul
     display: flex
     justify-content: space-between
@@ -215,6 +144,7 @@ header
     display: flex
     justify-content: space-between
     align-items: center
+    text-align left
     .texts
       h3
         font-size:rem(28);
@@ -238,15 +168,205 @@ header
         box-shadow:0px 2px 10px 0px rgba(232,63,39,0.14);
         border-radius:6px;
         text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
         span
-          background:rgba(232,63,39,1);
-          box-shadow:0px 2px 10px 0px rgba(232,63,39,0.14);
-          border-radius:6px;
-          color white
-          line-height: rem(40)
+          color #fff
+          font-size rem(16)
     .product
       width: rem(519)
       height: rem(446)
+
+.content1
+  width: 100%
+  //height rem(820)
+  background: #FAFAFA
+  border-radius:5px;
+  padding rem(83) rem(358) rem(109)
+  box-sizing border-box
+  text-align: center
+  h1
+    margin-bottom:rem(22)
+  p
+    font-size:rem(14);
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(75,70,70,1);
+    line-height:38px;
+    margin 0 auto rem(67)
+  ul
+    display: flex
+    justify-content: space-between
+    flex-wrap wrap
+    li
+      width rem(280)
+      height rem(226)
+      padding rem(12) rem(10)
+      display: flex
+      justify-content: center
+      flex-direction column
+      background:rgba(255,255,255,1);
+      box-shadow:0px 2px 10px 0px rgba(55,55,55,0.14);
+      border-radius:6px;
+      margin-bottom rem(34)
+      transform: translateY(0);
+      transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1),transform .3s cubic-bezier(.215, .61, .355, 1),-webkit-box-shadow .3s cubic-bezier(.215, .61, .355, 1),-webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
+      &:hover
+        box-shadow: 0 5px 8px rgba(0,0,0,0.15);
+        transform: translateY(-5px);
+      img[alt="scene"]
+        width rem(260)
+        height rem(156)
+        margin-bottom rem(19)
+      span
+        font-size:rem(14);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(75,70,70,1);
+        display block
+.content2
+  width: 100%
+  //height rem(654)
+  text-align: center
+  box-sizing border-box
+  padding rem(95) rem(388) rem(140)
+  margin-bottom rem(50)
+  h1
+    margin-bottom rem(22)
+  p
+    font-size:rem(14);
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(75,70,70,1);
+    margin-bottom rem(90)
+  ul
+    display: flex
+    flex-wrap wrap
+    justify-content space-between
+    li
+      width rem(307)
+      display: flex
+      justify-content space-between
+      align-items: top
+      margin-bottom rem(50)
+      img[alt="support"]
+        width rem(60)
+        height: rem(60)
+        margin-right rem(38)
+      .desc
+        h6
+          font-size:rem(20);
+          font-family:MicrosoftYaHei;
+          font-weight:400;
+          color:rgba(75,70,70,1);
+          margin-bottom rem(23)
+          text-align left
+        p
+          width:rem(209);
+          font-size:rem(14);
+          font-family:MicrosoftYaHei;
+          font-weight:400;
+          color:rgba(75,70,70,1);
+          text-align left
+.content3
+  width: 100%
+  //height rem(847)
+  text-align: center
+  box-sizing border-box
+  padding 0 rem(379) rem(100)
+  h1
+    margin-bottom rem(22)
+  p
+    font-size:rem(14);
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(75,70,70,1);
+    margin-bottom rem(67)
+  ul
+    display: flex
+    justify-content: space-between
+    .map
+      background url("../images/map_img.png") center/cover no-repeat
+
+    li
+      width calc(50% - 19px)
+      height rem(620)
+      text-align: left;
+      &:nth-child(1)
+        margin-right rem(38)
+      &:nth-child(2)
+        box-sizing border-box
+        padding rem(2)
+      p
+        font-size:rem(16);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(75,70,70,1);
+        margin-bottom rem(16)
+        span
+          color #E85A5A
+          margin-left rem(4)
+      input
+        width:100%;
+        height:rem(54);
+        background:rgba(246,246,246,1);
+        border-radius:5px;
+        padding-left rem(24)
+        outline none
+        margin: 0
+        display block
+        margin-bottom rem(25)
+        border 1px solid transparent
+        transition border-color 1s
+        &::-webkit-input-placeholder
+          font-size:rem(16);
+          font-family:MicrosoftYaHei;
+          font-weight:400;
+          color:rgba(139,139,139,1);
+        &:hover
+          border 1px solid #E83F27
+      textarea
+        width:100%;
+        height:rem(240);
+        background:rgba(246,246,246,1);
+        border-radius:5px;
+        outline none
+        resize none
+        margin-bottom rem(46)
+        border 1px solid transparent
+        transition border-color 1s
+        padding-left rem(24)
+        padding-top rem(19)
+        display block
+        &::-webkit-input-placeholder
+          font-size:rem(16);
+          font-family:MicrosoftYaHei;
+          font-weight:400;
+          color:rgba(139,139,139,1);
+          line-height rem(30)
+        &:hover
+          border 1px solid #E83F27
+      button
+        width:100%;
+        height:rem(54);
+        background:rgba(232,63,39,1);
+        border-radius:5px;
+        border none
+        outline none
+        display block
+        color white
+        font-size:rem(20);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        margin: 0
+        letter-spacing rem(4)
+        box-shadow: 0 8px 16px rgba(232,63,39,0.55);
+        &:hover
+          transform: translateY(-4px);
+          transition: box-shadow .3s cubic-bezier(.215, .61, .355, 1),transform .3s cubic-bezier(.215, .61, .355, 1),-webkit-box-shadow .3s cubic-bezier(.215, .61, .355, 1),-webkit-transform .3s cubic-bezier(.215, .61, .355, 1);
+
+
 
 
 

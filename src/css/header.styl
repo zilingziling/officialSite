@@ -1,0 +1,66 @@
+header
+    width: 100%
+    height: rem(92)
+    background: #1B1B1B
+    overflow hidden
+    .headerW
+      max-width: rem(1200);
+      position: relative;
+      margin: auto;
+      will-change: transform;
+      opacity 1
+      z-index 1
+      top: 0
+      height: rem(92)
+      nav
+        height: rem(92)
+        width 100%
+        padding: 0 rem(24);
+        margin auto
+        display flex
+        justify-content space-between
+        align-items center
+        box-sizing border-box
+        color white
+        box-shadow: 0 5px 8px rgba(0,0,0,0.15);
+        img[alt="logo"]
+          vertical-align: middle;
+          display: inline-block;
+          width rem(203)
+          height rem(46)
+        ul
+          background: transparent;
+          color: #fff;
+          height: rem(92);
+          border-bottom-color: transparent;
+          position: relative;
+          width rem(550)
+          display: flex
+          >*{
+            flex 1
+          }
+          .active
+            border-bottom 2px solid #E83F27
+            a
+              color #E83F27
+              border none
+              outline none
+              font-size rem(16)
+          li
+            text-align: center
+            border-bottom 2px solid transparent
+            list-style none
+            cursor pointer
+            display: flex
+            justify-content: center
+            align-items: center
+            transition: border-color .3s cubic-bezier(.645, .045, .355, 1),background .3s cubic-bezier(.645, .045, .355, 1),padding .15s cubic-bezier(.645, .045, .355, 1);
+            &:hover
+              border-bottom 2px solid #E83F27
+            &:hover a
+              color #E83F27
+            a
+              text-decoration: none
+              color #fff
+              transition: color .3s;
+              font-size rem(16)
