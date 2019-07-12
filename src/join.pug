@@ -3,9 +3,8 @@ block header
     -const active=2
     include ./templates/header
 block content
-    .banner
+    .joinBanner
         .bannerC
-            img(src="./images/logo01.png" alt="bannerLogo")
             .sign
                 h1 京猪充电，期待您的加入
                 p jingzhu charging Looking forward to your joining ~
@@ -14,6 +13,50 @@ block content
                 span JOIN US
         .arrow
             img(src="./images/sign.png" alt="sign")
-
+    section.join1
+        h1 合作共赢
+        p  合作共赢是一种方法，一种尝试，更是一种创新。一次选择，终身事业。
+        ul
+            li
+                .top
+                    h5 运营标配
+                    span Operational Standard Allocation
+                p 共享充电设备已经成为现阶段公开运营场所的标准配备。可以更好的满足消费者的充电需求，提升商家服务品质，增加商家竞争力。
+            li
+                .top
+                    h5 节约成本
+                    span Cost savings
+                p 保证场内消费者充电需求同时，有效减少商家自备充电器材的设备成本及人工成本，提升商家服务效率。
+            li
+                .top
+                    h5 增加收益
+                    span Increase revenue
+                p 消费者使用产生租金收益同时经过京猪小程序、支付宝、微信等引流，增加客流以及店内消费收益。
+            li
+                .top
+                    h5 合作保障
+                    span Cooperation Guarantee
+                p 智能管理系统，轻松解决管理问题，实现有效管理。7*24小时专人客服，使用无忧。专业安全认证产品，保证产品质量。保险公司承保，扫除后顾之忧。
+        .button
+            a 京猪充电合作商户APP下载
+                img(src="./images/arrowRight.png" alt="arrowRight")
+    section.content3
+        h1 京猪期待您的加入
+        p 若您有合作意向及建议，烦请填写如下信息，我们的客服会及时联系您，感谢您对京猪充电的关注！（填写过程中如有疑问，欢迎致电问询）
+        ul
+            li.mapW
+                img(src="./images/map_img.png" alt="map")
+            li.formW
+                div.form
+                    p 您的称呼
+                        span *
+                    input(placeholder="点击输入您的称呼")
+                    p 联系电话
+                        span *
+                    input(placeholder="点击输入您的联系电话")
+                    p 内容
+                        span *
+                    textarea(placeholder="说明您是业务咨询问题还是售后问题，方便客服人员更快的处理您的问题，感谢您的支持~")
+                    button(type="button") 提交
 block footer
     include ./templates/footer

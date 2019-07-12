@@ -1,0 +1,39 @@
+extends templates/layout
+block header
+    -const active=3
+    include ./templates/header
+block content
+    .shareBan
+        .arrow
+            img(src="./images/sign.png" alt="sign")
+    section.share1
+        h1 应用场景
+        p 京猪产品已签约红旗连锁超市，进入肯德基等多商业圈
+        ul.tabs
+            li.icon1.active
+                .img6
+                span 6槽5电
+            li.icon2
+                .img12
+                span 12槽
+            li.icon3
+                .img24
+                span 24槽立式柜机
+        .tabContent
+            ul
+                li
+                    h6 智能速充 超强续航
+                    p 80%电量只需半小时，2000mAh续航1整天。采用高智能聚合物电池，自动识别连接设备，调节所匹配的安全电流，在防止电源电流不匹配的同时，充电还不伤机身。
+                li
+                    h6 易借易还 100%服务
+                    p 异地归还，即用即走;7*24/h（咨询、解答、投诉、反馈）;实时监控电源电压、电流、容量变化;八重保障，安全可靠。
+            .pro
+    section.share2
+        h1 京猪优势
+        p 京猪充电，专注为用户提供“简单可依赖”共享移动电源租借服务。
+
+
+
+
+block footer
+    include ./templates/footer

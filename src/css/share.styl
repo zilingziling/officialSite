@@ -1,0 +1,125 @@
+@import "global.styl"
+@import "header.styl"
+@import "footer.styl"
+.shareBan
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  border-color: #666;
+  background-image: url("../images/banner3.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin-bottom rem(70)
+  .arrow
+    position absolute
+    bottom: 10%
+    left: 0
+    right: 0
+    margin auto
+    width: rem(38)
+    height: rem(22)
+    transform translate(0px,-20px)
+    img[alt="sign"]
+      width: rem(38)
+      height: rem(22)
+.share1
+  .tabs
+    width rem(1240)
+    height rem(50)
+    margin rem(65) auto rem(80)
+    display: flex
+    justify-content: space-around
+    border-bottom 1px solid #E6E6E6
+    li
+      color:#4B4646;
+      border-bottom 1px solid transparent
+      display: flex
+      align-items: center
+      justify-content: center
+      width 13%
+      transition: border-color .3s cubic-bezier(.645, .045, .355, 1),background .3s cubic-bezier(.645, .045, .355, 1),padding .15s cubic-bezier(.645, .045, .355, 1);
+      cursor pointer
+      &:hover
+        border-bottom 1px solid #E83F27
+        color #E83F27
+      span
+        font-size:rem(18);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+      &.active
+        border-bottom 1px solid #E83F27
+        color #E83F27
+        .img6
+          background: url("../images/red6.png")
+        .img12
+          background: url("../images/red12.png")
+        .img24
+          background: url("../images/red24.png")
+      &.icon1:hover
+        .img6
+          background: url("../images/red6.png")
+      &.icon2:hover
+        .img12
+          background: url("../images/red12.png")
+      &.icon3:hover
+        .img24
+          background: url("../images/red24.png")
+      .img6
+        width rem(44)
+        height rem(44)
+        background: url("../images/gray6.png")
+        background-repeat no-repeat
+        background-size cover
+        background-position center
+      .img12
+        width rem(44)
+        height rem(44)
+        background: url("../images/gray12.png")
+        background-repeat no-repeat
+        background-size cover
+        background-position center
+      .img24
+        width rem(44)
+        height rem(44)
+        background: url("../images/gray24.png")
+        background-repeat no-repeat
+        background-size cover
+        background-position center
+.tabContent
+  width rem(1080)
+  height rem(310)
+  margin auto
+  display: flex
+  justify-content: space-between
+  align-items: bottom
+  text-align left
+  margin-bottom rem(56)
+  ul
+    margin-right rem(127)
+    li
+      margin-bottom rem(73)
+      h6
+        font-size:rem(20);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(75,70,70,1);
+        margin-bottom rem(23)
+      p
+        width:rem(513);
+        height:rem(62);
+        font-size:rem(14);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(102,102,102,1);
+        line-height:rem(24);
+  .pro
+    background url("../images/pro.png") center/cover no-repeat
+    width rem(436)
+    height rem(279)
+.share2
+  width: 100%
+  height rem(660)
+  background #FAFAFA
+  padding-top rem(93)
+  text-align: center

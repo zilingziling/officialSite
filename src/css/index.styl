@@ -1,23 +1,6 @@
 @import './global.styl';
 @import './header.styl';
 @import "footer.styl"
- $vw_fontsize=108; // iPhone 6尺寸的根元素大小基准值
- rem($px)
-    ($px / $vw_fontsize) * 1rem;
-
-$vw_design=1920;
-html {
-  font-size: ($vw_fontsize / ($vw_design / 2)) * 100vw;
-  padding: 0;
-  margin: 0;
-  @media screen and (min-width: 1200px) {
-    font-size: 108px;
-  }
-}
-body{
-  padding: 0;
-  margin: 0;
-}
 .banner
   width: 100%;
   height: 100vh;
@@ -82,7 +65,7 @@ body{
         line-height:rem(62);
   .arrow
     position absolute
-    bottom: rem(20)
+    bottom: 10%
     left: 0
     right: 0
     margin auto
@@ -90,15 +73,7 @@ body{
     img[alt="sign"]
       width: rem(38)
       height: rem(22)
-section
-  text-align: center
-  h1
-      font-size:rem(38);
-      font-family:MicrosoftYaHei-Bold;
-      font-weight:bold;
-      color:rgba(75,70,70,1);
-      line-height:rem(38);
-      margin 0 auto
+
 .content0
   width: 100%
   height: rem(1057)
@@ -296,6 +271,7 @@ section
   ul
     display: flex
     justify-content: space-between
+    flex-wrap wrap
     li
       text-align: left;
       &:nth-child(1)

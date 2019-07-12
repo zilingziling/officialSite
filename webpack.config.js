@@ -13,7 +13,8 @@ module.exports = {
   // 入口文件
   entry: {
     index: "./src/javascript/index.js",
-    join:"./src/javascript/join.js"
+    join:"./src/javascript/join.js",
+    share:"./src/javascript/share.js"
   },
   // 打包出口
   output: {
@@ -150,6 +151,11 @@ module.exports = {
       template: './src/join.pug',
       filename: './join.html',
       chunks: ["join"],
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/share.pug',
+      filename: './share.html',
+      chunks: ["share"],
     })
   ],
   // devServer 配置

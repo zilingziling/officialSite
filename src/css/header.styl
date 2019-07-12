@@ -1,8 +1,11 @@
 header
     width: 100%
-    height: rem(92)
-    background: #1B1B1B
+    height: rem(64)
+    background:rgba(27,27,27,.8);
     overflow hidden
+    position fixed
+    top: 0
+    z-index 2
     .headerW
       max-width: rem(1200);
       position: relative;
@@ -11,9 +14,9 @@ header
       opacity 1
       z-index 1
       top: 0
-      height: rem(92)
+      height: rem(64)
       nav
-        height: rem(92)
+        height: rem(64)
         width 100%
         padding: 0 rem(24);
         margin auto
@@ -22,16 +25,15 @@ header
         align-items center
         box-sizing border-box
         color white
-        box-shadow: 0 5px 8px rgba(0,0,0,0.15);
         img[alt="logo"]
           vertical-align: middle;
           display: inline-block;
-          width rem(203)
-          height rem(46)
+          width rem(142)
+          height rem(32)
         ul
           background: transparent;
           color: #fff;
-          height: rem(92);
+          height: rem(64);
           border-bottom-color: transparent;
           position: relative;
           width rem(550)
@@ -64,3 +66,8 @@ header
               color #fff
               transition: color .3s;
               font-size rem(16)
+              height 100%
+              display: flex
+              align-items: center
+              width: 100%
+              justify-content: center
