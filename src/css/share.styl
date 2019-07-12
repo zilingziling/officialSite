@@ -1,6 +1,7 @@
 @import "global.styl"
 @import "header.styl"
 @import "footer.styl"
+
 .shareBan
   width: 100%;
   height: 100vh;
@@ -86,40 +87,99 @@
         background-repeat no-repeat
         background-size cover
         background-position center
-.tabContent
-  width rem(1080)
-  height rem(310)
-  margin auto
-  display: flex
-  justify-content: space-between
-  align-items: bottom
-  text-align left
-  margin-bottom rem(56)
-  ul
-    margin-right rem(127)
-    li
-      margin-bottom rem(73)
-      h6
-        font-size:rem(20);
-        font-family:MicrosoftYaHei;
-        font-weight:400;
-        color:rgba(75,70,70,1);
-        margin-bottom rem(23)
-      p
-        width:rem(513);
-        height:rem(62);
-        font-size:rem(14);
-        font-family:MicrosoftYaHei;
-        font-weight:400;
-        color:rgba(102,102,102,1);
-        line-height:rem(24);
-  .pro
-    background url("../images/pro.png") center/cover no-repeat
-    width rem(436)
-    height rem(279)
+#swiper1
+    width rem(1080)
+    height rem(310)
+    .swiper-slide
+      width rem(1080)
+      height rem(310)
+      margin auto
+      display: flex
+      justify-content: space-between
+      align-items: top
+      text-align left
+      margin-bottom rem(56)
+      ul
+        margin-right rem(127)
+        li
+          margin-bottom rem(40)
+          h6
+            font-size:rem(20);
+            font-family:MicrosoftYaHei;
+            font-weight:400;
+            color:rgba(75,70,70,1);
+            margin-bottom rem(23)
+          p
+            width:rem(513);
+            height:rem(62);
+            font-size:rem(14);
+            font-family:MicrosoftYaHei;
+            font-weight:400;
+            color:rgba(102,102,102,1);
+            line-height:rem(24);
+      .pro
+        width rem(436)
+        height rem(279)
+      .pro6
+        background url("../images/pro.png") center/cover no-repeat
+      .pro12
+        background url("../images/pro12.png") center/cover no-repeat
+      .pro24
+        background url("../images/pro24.png") center/cover no-repeat
+
 .share2
   width: 100%
   height rem(660)
   background #FAFAFA
   padding-top rem(93)
   text-align: center
+#swiper2
+  height rem(346)
+  width rem(944)
+  margin auto
+  font-size rem(16)
+  text-align: center
+  .swiper-wrapper
+    .swiper-slide
+      img[alt="scroll"]
+        width rem(120)
+        height rem(120)
+        margin-bottom rem(34)
+      h6
+        font-size:rem(16);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(70,70,70,1);
+        margin-bottom rem(18)
+      p
+        font-size:rem(14);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(136,136,136,1);
+        margin-bottom rem(31)
+      h4
+        font-size:rem(26);
+        font-family:MicrosoftYaHei-Bold;
+        font-weight:bold;
+        color:rgba(75,70,70,1);
+  .swiper-pagination
+    bottom rem(-5px) !important
+    width: rem(40) !important
+    display: flex
+    justify-content: space-between
+    left: 0
+    right: 0
+    margin auto
+  .my-bullet
+    width: rem(10)
+    height: rem(10)
+    background-color: #DEDEDE
+    border-radius 50%
+    display: inline-block
+    margin: 2px
+    cursor pointer
+    transition all .3s
+    &.my-bullet-active
+      width: rem(10)
+      height: rem(10)
+      background-color: #E83F27
