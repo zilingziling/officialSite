@@ -1,0 +1,15 @@
+extends templates/layout
+block header
+    -const active=4
+    include templates/header
+block content
+    .aboutBan
+        .bannerC
+            .sign
+                h1 京猪移动共享充电，让你永不断电
+                p jingzhu mobile sharing charging, so that you never power off.
+                span 成都小麦花网络技术有限公司
+        .arrow
+            img(src="./images/sign.png" alt="sign")
+block footer
+    include templates/footer
