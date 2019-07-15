@@ -21,28 +21,26 @@
     right: 0
     font-size: rem(14)
     color: #fff
-    width: rem(768)
-    >p
-      font-size:rem(32);
-      font-family:MicrosoftYaHei;
-      font-weight:400;
-      color:rgba(255,255,255,1);
-      margin-bottom: rem(30)
     .sign
       word-wrap: break-word;
-      min-height: rem(24);
-      margin-bottom: rem(40)
+      margin-bottom: rem(20)
       h1
+        margin auto
+        width rem(762)
         font-size:rem(68);
         font-family:MicrosoftYaHei-Bold;
         font-weight:bold;
+        font-style:italic;
         color:rgba(255,255,255,1);
-      p
-        font-size:rem(20);
-        font-family:MicrosoftYaHei;
-        font-weight:400;
-        color:rgba(255,255,255,1);
-        line-height:rem(38);
+        line-height:rem(88);
+        text-shadow:0 rem(3) rem(10) rgba(82,82,82,0.25);
+    p
+      font-size:rem(20);
+      font-family:MicrosoftYaHei;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      text-shadow:0 rem(3) rem(10) rgba(82,82,82,0.25);
+      margin-bottom rem(40)
     .learnMore
       font-size rem(24)
       color #fff
@@ -61,11 +59,15 @@
         font-family:MicrosoftYaHei;
         font-weight:400;
         color:rgba(254,254,254,1);
-        line-height:rem(62);
         text-decoration none
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
   .arrow
     position absolute
-    bottom: 10%
+    bottom: 4%
     left: 0
     right: 0
     margin auto
@@ -73,3 +75,45 @@
     img[alt="sign"]
       width: rem(38)
       height: rem(22)
+#news
+  margin-bottom rem(80)
+  ul
+    width rem(1192)
+    margin: auto
+    li
+      margin rem(54) auto 0
+      display: flex
+      justify-content: space-between
+      text-align left
+      &:not(:last-child)
+        border-bottom 1px dashed rgba(230,230,230,1);
+        padding-bottom rem(44)
+      img[alt="news"]
+        width rem(338)
+        height rem(218)
+        margin-right rem(28)
+      .details
+        h4
+          font-size:rem(22);
+          font-family:MicrosoftYaHei-Bold;
+          font-weight:bold;
+          color:rgba(70,70,70,1);
+          line-height:rem(38);
+        p
+          width:rem(829);
+          height:rem(99);
+          font-size:rem(14);
+          font-family:MicrosoftYaHei;
+          font-weight:400;
+          color:rgba(70,70,70,1);
+          line-height:rem(28);
+          margin-bottom rem(20)
+        h6
+          font-size:rem(14);
+          font-family:MicrosoftYaHei;
+          font-weight:400;
+          color:rgba(136,136,136,1);
+          line-height:rem(38);
+          text-align: right
+
+

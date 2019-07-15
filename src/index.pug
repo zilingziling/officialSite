@@ -1,5 +1,4 @@
 extends templates/layout
-
 block header
     -const active=1
     include ./templates/header.pug
@@ -35,7 +34,7 @@ block content
                 h3 京猪共享充电宝
                 p  便捷扫码快速充电，大容量可携带，异地随时归还可享受支付宝、微信免押快速租借。
                 .button
-                    span 了解更多 >
+                    a(href="./share.html") 了解更多 >
             .product
                 img(src="./images/img_product.png" alt="product")
     section.content1
