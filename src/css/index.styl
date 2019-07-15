@@ -176,10 +176,9 @@
 
 .content1
   width: 100%
-  //height rem(820)
   background: #FAFAFA
   border-radius:5px;
-  padding rem(83) rem(358) rem(109)
+  padding rem(83) 0 rem(109)
   box-sizing border-box
   text-align: center
   h1
@@ -192,9 +191,11 @@
     line-height:38px;
     margin 0 auto rem(67)
   ul
+    margin:auto
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     flex-wrap wrap
+    width: 72%
     li
       width rem(280)
       height rem(226)
@@ -222,10 +223,11 @@
         color:rgba(75,70,70,1);
         display block
 .content2
-  width: 100%
+  width: 64%
   text-align: center
   box-sizing border-box
-  padding rem(83) rem(358) rem(80)
+  padding rem(83) 0 rem(80)
+  margin auto
   h1
     margin-bottom rem(22)
   p
@@ -300,7 +302,7 @@
         height:9%;
         background:rgba(246,246,246,1);
         border-radius:5px;
-        padding-left rem(24)
+        padding 0 rem(24)
         outline none
         margin: 0
         display block
@@ -324,8 +326,7 @@
         margin-bottom 9%
         border 1px solid transparent
         transition border-color 1s
-        padding-left rem(24)
-        padding-top rem(19)
+        padding rem(19) rem(24) 0
         display block
         &::-webkit-input-placeholder
           font-size:rem(16);
