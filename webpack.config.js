@@ -15,7 +15,8 @@ module.exports = {
     index: "./src/javascript/index.js",
     join:"./src/javascript/join.js",
     share:"./src/javascript/share.js",
-    aboutUs:"./src/javascript/aboutUs.js"
+    aboutUs:"./src/javascript/aboutUs.js",
+    news:"./src/javascript/news.js"
   },
   // 打包出口
   output: {
@@ -163,6 +164,11 @@ module.exports = {
       filename: './aboutUs.html',
       chunks: ["aboutUs"],
     }),
+    new HtmlWebPackPlugin({
+      template: './src/news.pug',
+      filename: 'news.html',
+      chunks: ["news"],
+    })
   ],
   // devServer 配置
   devServer: {
