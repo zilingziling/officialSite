@@ -1,0 +1,90 @@
+@import "global.styl"
+@import "header.styl"
+@import "footer.styl"
+.main
+  width: 100%
+  height 100%
+  background url("../images/pc_bg.png") center/cover  no-repeat
+  position relative
+  margin-top rem(64)
+  article
+    position absolute
+    top rem(185)
+    right 12%
+    text-align left
+    h1
+      font-size:rem(52);
+      font-family:MicrosoftYaHei-Bold;
+      font-weight:bold;
+      color:rgba(54,54,54,1);
+      margin-bottom rem(23)
+    >p
+      font-size:rem(22);
+      font-family:MicrosoftYaHei;
+      font-weight:400;
+      color:rgba(54,54,54,1);
+      margin-bottom rem(42)
+    h6
+      font-size:rem(32);
+      font-family:MicrosoftYaHei-Bold;
+      font-weight:bold;
+      color:rgba(46,117,201,1);
+      margin-bottom rem(54)
+    ul
+      display: flex
+      width rem(452)
+      justify-content: space-between
+      margin-bottom rem(11)
+      li
+        text-align center
+        img[alt="downloadIcon"]
+          width:rem(132);
+          height:rem(158);
+          border-radius:rem(36);
+        a
+          display: flex
+          width:rem(195);
+          height:rem(59);
+          border-radius:rem(30);
+          align-items: center
+          justify-content: center
+          text-decoration: none
+          font-size rem(24)
+        .blue
+          color #157DE7
+          border:2px dashed rgba(21,125,231,1);
+        .orange
+          color #FF4704
+          border:2px dashed rgba(255,71,4,1);
+    .qrcode
+      display: flex
+      align-items baseline
+      justify-content flex-end
+      p
+        font-size:rem(22);
+        font-family:MicrosoftYaHei;
+        font-weight:400;
+        color:rgba(109,109,109,1);
+        display: block
+        height fit-content
+        margin-right rem(23)
+      .qr
+        width rem(252)
+        height rem(252)
+        border rem(15) solid #D2E8FF
+        border-radius rem(20)
+        img[alt="downloadQr"]
+          width rem(222)
+          height rem(222)
+  >p
+    width: 100%
+    text-align: center
+    font-size:rem(16);
+    font-family:MicrosoftYaHei;
+    font-weight:400;
+    color:rgba(54,54,54,1);
+    display: block
+    position absolute
+    bottom rem(27)
+
+

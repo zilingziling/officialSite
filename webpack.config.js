@@ -16,7 +16,8 @@ module.exports = {
     join:"./src/javascript/join.js",
     share:"./src/javascript/share.js",
     aboutUs:"./src/javascript/aboutUs.js",
-    news:"./src/javascript/news.js"
+    news:"./src/javascript/news.js",
+    download:"./src/javascript/download.js"
   },
   // 打包出口
   output: {
@@ -168,6 +169,11 @@ module.exports = {
       template: './src/news.pug',
       filename: 'news.html',
       chunks: ["news"],
+    }),
+    new HtmlWebPackPlugin({
+      template: './src/download.pug',
+      filename: 'download.html',
+      chunks: ["download"],
     })
   ],
   // devServer 配置

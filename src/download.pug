@@ -1,0 +1,25 @@
+extends templates/layout
+block header
+    -const active=6
+    include templates/header
+block content
+    .main
+        article
+            h1 京猪合作、京猪商户端正式上线~
+            p JingZhu cooperation, JingZhu merchants end officially launched.
+            h6 一览代理商户总收益，高效便捷设备操作
+            ul
+                li
+                    img(src="./images/PC_ICON01.png" alt="downloadIcon")
+                    a.blue(href="javascript:;") 京猪合作下载
+                li
+                    img(src="./images/PC_ICON02.png" alt="downloadIcon")
+                    a.orange(href="javascript:;") 京猪商户下载
+            .qrcode
+                p 或用手机扫描二维码安装APP
+                .qr
+                    img(src="./images/downloadQr.png" alt="downloadQr")
+        p &copy;成都小麦花网络技术有限公司
+
+
+
