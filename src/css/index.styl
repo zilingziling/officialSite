@@ -74,7 +74,7 @@
     left: 0
     right: 0
     margin auto
-    transform translate(0px,-20px)
+    transition up .3s infinite
     img[alt="sign"]
       width: rem(38)
       height: rem(22)
@@ -378,7 +378,11 @@
         position absolute
         top: 0
         left: 0
-
+@keyframes up
+  from
+    top 0
+  to
+    top rem(-20)
 @import "indexMedia.styl"
 
 
